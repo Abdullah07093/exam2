@@ -52,19 +52,23 @@ for (let index = 0; index < a.length; index++) {
     return log;
 }
 console.log(jazzify(["Dm", "G7", "E", "A"]));
+
 console.log("Task4")
-let b=3;
-let c=0;
+function numbersSum(c){
 
-function sumCubes(a){
-   if (b==0) return ;
-        c+=Math.pow(b, a);
-        b--;
+    // return c.reduce( (sumSoFar, nextValue) => {
 
-        sumCubes(a);
+    //     if ( typeof nextValue === "number" && isFinite(nextValue) ) {
+    //        return sumSoFar + nextValue;
+    //     }
+    //     //skip otherwise
+    //     return sumSoFar;
+    //  }, 0);    
+     return c.reduce( (a, b) => (typeof b === "number" && isFinite(b) ? a + b : a),0);    
+
+      
 }
-sumCubes(3)
-console.log(c)
+console.log(numbersSum([1, 2, "13", "4", "645"]))
 console.log("Task5")
 
 function sumOfDigits(){
