@@ -1,3 +1,4 @@
+
 console.log("Exam2")
 console.log("Task1")
 function longestWord(a){
@@ -64,19 +65,25 @@ function numbersSum(c){
     //     //skip otherwise
     //     return sumSoFar;
     //  }, 0);    
-     return c.reduce( (a, b) => (typeof b === "number" && isFinite(b) ? a + b : a),0);    
-
-      
+       return c.reduce( (a, b) => (typeof b === "number" && isFinite(b) ? a + b : a),0);       
 }
-console.log(numbersSum([1, 2, "13", "4", "645"]))
-console.log("Task5")
+console.log(numbersSum([1, 2, 3, 4, 5, true]) );
 
-function sumOfDigits(){
-    const getSumOfDigits=sumOfDigits();
+console.log("Task5");
+function capMe(a){
+   // console.log(y.charAt(0).toUpperCase() + string.slice(1));
+//return a.split(' ').charAt(0).toUpperCase() + string.slice(1);
+ return   a.map(b => {
+    const capletter = b.charAt(0).toUpperCase();
+    const back = b.slice(1);
 
-    console.log(getSumOfDigits);
-    return 0;
+    return capletter + back;
+  });
 }
+
+
+console.log(capMe(["mavis","senaida","letty"]));
+
 
 
 
