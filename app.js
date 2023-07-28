@@ -83,6 +83,20 @@ function capMe(a){
 
 
 console.log(capMe(["mavis","senaida","letty"]));
+console.log("Task6");
+function getStudentTopNotes(b){
+    let log=[]
+for (const key in b) {
+    log.push( Math.max(...b[key].notes));
+    // if (b.hasOwnProperty.call(b, key)) {
+    //     const element = b[key];  
+    // }
+}
+return log
+}
+console.log(getStudentTopNotes([{id:5,name:"Jake",notes:[2,4,3,3,2,5]},
+    {id:5,name:"Jake",notes:[5,4,3,1,2,5]},
+    {id:5,name:"Jake",notes:[2,4,3,3,2,4]}]));
 
 
 
