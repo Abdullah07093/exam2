@@ -98,6 +98,14 @@ console.log(getStudentTopNotes([{id:5,name:"Jake",notes:[2,4,3,3,2,5]},
     {id:5,name:"Jake",notes:[5,4,3,1,2,5]},
     {id:5,name:"Jake",notes:[2,4,3,3,2,4]}]));
 
+    console.log("Task7");
+    function getDays(a,b){
+
+        console.log(Math.abs((a-b) / (1000 * 60 * 60 * 24)));
+    }
+    console.log(getDays(new Date("Jun 14 ,2019"),new Date("Jun 20,2019")));
+
+
 
 
 
